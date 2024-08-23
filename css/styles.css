@@ -71,7 +71,10 @@ header {
 /* -------- HERO SECTION -------- */
 
 
-
+.carousel img{
+    height: 600px;
+    object-fit: cover; 
+}
 
 
 /* -------- ELEGIDOS SECTION -------- */
