@@ -10,11 +10,29 @@
     <!-- bootstrap icons stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- DESCRIPTION (180 caracteres)-->
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <!-- DESCRIPTION (entre 70 y 320, 180 caracteres ideal)-->
     <meta name="description" content="">
-    <!-- KEYWORDS ()-->
+    <!-- KEYWORDS (18 a 20)-->
     <meta name="keywords" content="">
-    <!--  -->
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Lutto Clothing - Tienda online</title>
 </head>
@@ -59,45 +77,71 @@
     <main>
         <!-- Hero Section - carousel -->
         <section class="hero">
-            <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="hero-text">
+                <a href="index.html">
+                    <h1>Bienvenidos a Lutto Clothing</h1>
+                    <p>Descubrí la elegancia que marca la diferencia</p>
+                </a>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner carousel">
-                    <div class="carousel-item active carousel">
-                        <img src="https://dummyimage.com/2035x500/bd184f/fff.png&text=imagen+de+prueba"
-                            class="d-block w-100" alt="...">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="./pages/ellas.html">
+                            <img src="./img/carousel-mujer.jpg" class="d-block w-100"
+                                alt="mujer con campera de jean, clickea para acceder a ropa de mujer">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Comprar ahora</h5>
+                                <p>Hasta 12 cuotas sin interés y envíos gratuitos.</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/2035x500/bd184f/fff.png&text=imagen+de+prueba"
-                            class="d-block w-100" alt="...">
+                        <a href="./pages/ellos.html">
+                            <img src="./img/carousel-hombre.jpg" class="d-block w-100"
+                                alt="hombre con chaqueta marrón, clickea para acceder a ropa de hombre">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Comprar ahora</h5>
+                                <p>Hasta 12 cuotas sin interés y envíos gratuitos.</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/2035x500/bd184f/fff.png&text=imagen+de+prueba"
-                            class="d-block w-100" alt="...">
+                        <a href="./pages/ninos.html">
+                            <img src="./img/carousel-niños.jpg" class="d-block w-100"
+                                alt="niños fotografiandose vistiendo lutto clothings, clickea para acceder a ropa de niños">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Comprar ahora</h5>
+                                <p>Hasta 12 cuotas sin interés y envíos gratuitos.</p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
         </section>
-        <!-- Elegidos Section -->
-        <section class="productos-elegidos">
+        <!-- Product Section -->
+        <section class="product-section">
             <h2>Elegidos para ellas</h2>
-            <div class="productos-grid">
+            <div class="product-grid">
                 <div class="product-item">
                     <img src="./img/vestido-floral.jpg" alt="vestido floral">
                     <p class="product-description">Vestido Floral</p>
@@ -114,18 +158,18 @@
                     <img src="./img/jean-sostenible-ellas.jpg" alt="jean sostenible para ellas">
                     <p class="product-description">Jean sostenible ellas</p>
                     <p class="product-price">$55000</p>
-                    <button class="btn-add-to-cart">Agregar al carrito</button>                  
+                    <button class="btn-add-to-cart">Agregar al carrito</button>
                 </div>
                 <div class="product-item">
-                    <img src="https://dummyimage.com/250x375/bd184f/fff.png&text=remera+sostenible+niños" alt="">
-                    <p class="product-description">producto</p>
-                    <p class="product-price">$55000</p>
-                    <button class="btn-add-to-cart">Agregar al carrito</button>                  
+                    <img src="./img/enterito-claro-ellas.jpg" alt="enterito de jean para ellas">
+                    <p class="product-description">Enterito Claro ellas</p>
+                    <p class="product-price">$50000</p>
+                    <button class="btn-add-to-cart">Agregar al carrito</button>
                 </div>
-                            </div>
+            </div>
 
             <h2>Elegidos para ellos</h2>
-            <div class="productos-grid">
+            <div class="product-grid">
                 <div class="product-item">
                     <img src="./img/jacket.jpg" alt="chaqueta para ellos">
                     <p class="product-description">Jacket</p>
@@ -148,11 +192,11 @@
                     <img src="https://dummyimage.com/250x375/bd184f/fff.png&text=remera+sostenible+niños" alt="">
                     <p class="product-description">producto</p>
                     <p class="product-price">$55000</p>
-                    <button class="btn-add-to-cart">Agregar al carrito</button>                  
+                    <button class="btn-add-to-cart">Agregar al carrito</button>
                 </div>
             </div>
             <h2>Elegidos para Niños</h2>
-            <div class="productos-grid">
+            <div class="product-grid">
                 <div class="product-item">
                     <img src="https://dummyimage.com/250x375/bd184f/fff.png&text=remera+sostenible+niños"
                         alt="remera sostenible niños">
@@ -178,7 +222,7 @@
                     <img src="https://dummyimage.com/250x375/bd184f/fff.png&text=remera+sostenible+niños" alt="">
                     <p class="product-description">producto</p>
                     <p class="product-price">$55000</p>
-                    <button class="btn-add-to-cart">Agregar al carrito</button>                  
+                    <button class="btn-add-to-cart">Agregar al carrito</button>
                 </div>
             </div>
         </section>
@@ -188,7 +232,7 @@
             <div class="info-item info-envio">
                 <h3>Envio gratis</h3>
                 <p>a partir de $50000</p>
-                <a href="./pages//info-envio.html">ver más</a>
+                <a href="./pages/info-envio.html">ver más</a>
             </div>
             <div class="info-item info-cuotas">
                 <h3>3, 6, 9* y/o 12** cuotas sin interés</h3>
@@ -226,13 +270,13 @@
             <a href="./pages/contacto.html" class="footer-link">Contacto</a>
             <a href="./pages/ubicacion.html" class="footer-link">Ubicación</a>
             <a href="https://www.facebook.com/PASTOCLOTHINGS/" class="footer-social">
-                <img src="./img/facebook.png" alt="Facebook"> Facebook
+                <img src="./img/facebook.png" alt="Facebook"> <span>Facebook</span>
             </a>
             <a href="https://www.instagram.com/luttoclothings/" class="footer-social">
-                <img src="./img/instagram.png" alt="Instagram"> Instagram
+                <img src="./img/instagram.png" alt="Instagram"> <span>Instagram</span>
             </a>
             <a href="https://www.tiktok.com/" class="footer-social">
-                <img src="./img/tiktok.png" alt="TikTok"> TikTok
+                <img src="./img/tiktok.png" alt="TikTok"> <span>TikTok</span>
             </a>
         </div>
         <p class="cr-footer">&copy; 2024 Lutto Clothing. Todos los derechos reservados.</p>

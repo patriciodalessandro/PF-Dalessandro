@@ -1,0 +1,22 @@
+/* botones*/
+$color-boton: #ff6347;
+$boton-hover:  #e5533d;
+$color-precios: #bd184f;
+
+
+/* enlaces*/
+%enlaces {
+    text-decoration: none;
+    color: black;
+    ;}
+
+
+/* flexbox */
+@mixin flex ($display, $justify, $aling, $direction){
+    display: $display;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-direction: $direction;
+}
+
+/*extends*/

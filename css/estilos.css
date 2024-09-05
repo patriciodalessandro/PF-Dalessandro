@@ -1,15 +1,9 @@
 @charset "UTF-8";
-/* ejemplo */
-/* h1 { 
-    color: nth($colores, 4);
-    font-size: nth($font, 2);
-}*/
-/* + - * / */
+/* botones*/
+/* enlaces*/
+/* flexbox */
+/*extends*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-.botonx {
-  background-color: black;
-  color: white; }
-
 /* -------- GENERAL RESET -------- */
 * {
   margin: 0;

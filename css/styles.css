@@ -70,65 +70,115 @@ header {
 
 /* -------- HERO SECTION -------- */
 
+.hero .hero-section {
+    position: relative;
+  }
+  
 
-.carousel img{
+  
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 60%;
+    z-index: 10;
+  }
+.hero .hero-text a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+.hero .hero-text a h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  
+.hero .hero-text p {
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+
+.hero .carousel .carousel-inner .carousel-item img{
     height: 600px;
     object-fit: cover; 
 }
 
 
+.hero .carousel .carousel-inner .carousel-item .carousel-caption h5{
+   
+    font-weight: 800;
+}
+.hero .carousel .carousel-inner .carousel-item .carousel-caption p {
+    font-weight: 600;
+}
 /* -------- ELEGIDOS SECTION -------- */
 
-.productos-elegidos {
-    padding: 0px 20px 50px 20px;
-}
 
-.productos-elegidos h2 {
-    font-size: 24px; 
-    text-align: center;
+.product-section {
     padding: 20px;
-    margin-top: 50px;
-    width: 100%;
 }
 
-.productos-elegidos .productos-grid {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto ;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.productos-elegidos .productos-grid .product-item {
-    width: 80%;
+.product-section  h2 {
     text-align: center;
-    padding: 10px 0px 20px 0px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.product-section .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.product-section .product-grid .product-item {
+    text-align: center;
+    padding: 10px;
     background-color: #f7f7f7;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+}
 
-.productos-elegidos .productos-grid .product-item img {
+
+
+.product-section .product-grid .product-item img {
+    max-width: 100%; 
+    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.productos-elegidos .productos-grid .product-item .product-description {
+.product-section .product-grid .product-item .product-description {
     font-size: 16px;
     color: #555;
     margin-bottom: 8px;
 }
 
-.productos-elegidos .productos-grid .product-item .product-price {
+.product-section .product-grid .product-item .product-price {
     font-size: 18px;
     color: #bd184f;
     font-weight: bold;
     margin-bottom: 12px;
 }
 
-.productos-elegidos .productos-grid .product-item .btn-add-to-cart {
+.product-section .product-grid .product-item .btn-add-to-cart {
     padding: 10px 20px;
     background-color: #ff6347;
     color: #fff;
@@ -138,9 +188,10 @@ header {
     transition: background-color 0.3s ease;
 }
 
-.productos-elegidos .productos-grid .product-item .btn-add-to-cart:hover {
+.product-section .product-grid .product-item .btn-add-to-cart:hover {
     background-color: #e5533d;
 }
+
 
 /* -------- INFO SECTION -------- */
 
@@ -183,6 +234,7 @@ header {
 
 
 /* -------- NEWSLETTER SECTION -------- */
+
 .newsletter {
     background: #f9f9f9;
     padding: 20px;
@@ -287,385 +339,482 @@ footer p {
 }
 
 
-/* ----- Estilos compartidos para las páginas de productos ----- */
-
-.product-page .product-section {
-    padding: 20px;
-}
-
-.product-page h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-    color: #333;
-}
-
-.product-page .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin-bottom: 40px;
-}
-
-.product-page .product-item {
-    text-align: center;
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.product-page .product-item img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.product-page .product-description {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-.product-page .product-price {
-    font-size: 18px;
-    color: #bd184f;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.product-page .btn-add-to-cart {
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.product-page .btn-add-to-cart:hover {
-    background-color: #e5533d;
-}
-
-/* -------- NOSOTROS --------*/
+/* -------- PÁGINA DE NOSOTROS --------*/
 
 .nosotros-section {
-    padding: 50px;
-}
-
-.nosotros-section h2{
-    font-size: 30px;
-    margin: 20px;
-}
-
-
-.nosotros-section p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f4f4;
     text-align: justify;
-    font-size: 20px;
-    margin: 0px 0px 10px 20px;
-}
+    border-radius: 8px;
+  }
+  
+  .nosotros-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .nosotros-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
 
 
+/* -------- PAGINA DE CONTACTO -------- */
 
-/* -------- CONTACTO PAGE-------- */
 .contacto-section {
     width: 100%;
     padding: 50px;
-}
-.contacto-section h2{
-    font-size: 30px;
-    margin: 20px;
-}
-
-.contacto-section form {
-    margin: 0px 0px 10px 20px;
-}
-
-.contacto-section form textarea {
-    width: 709px;
-    height: 195px;
-}
-
-/* -------- CONTACTO UBICACIÓN-------- */
-
-.ubicacion-section{
-    height: 100%;
-    padding: 50px;
-}
-.ubicacion-section h2{
-    font-size: 30px;
+    background-color: #f9f9f9; 
+  }
+  
+.contacto-section .contacto-form-container {
+    width: 600px;
+    margin: 0 auto;
+  }
+.contacto-section div h1 {
+    font-size: 40px;
     margin-bottom: 20px;
-}
+  }
+  
+.contacto-section .contacto-form-container .contacto-form {
+    display: flex;
+    flex-direction: column;
+  }
 
-
-.ubicacion-section a{
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
+.contacto-section .contacto-form-container .contacto-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; 
+  }
+  
+.contacto-section .contacto-form-container .contacto-form .form-group label {
+    margin-bottom: 5px; 
+    font-weight: bold;
+  }
+  
+.contacto-section .contacto-form-container .contacto-form  .form-group input,
+.contacto-section .contacto-form-container .contacto-form .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.contacto-section .contacto-form-container .contacto-form .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    width: 100%; /* Ajusta el ancho para que sea responsivo */
+  }
+  
+  .contacto-section .contacto-form-container .contacto-form .form-group button {
+    align-self: flex-start; /* Alinea el botón al principio */
+    padding: 10px 20px;
+    background-color: #ff6347; /* Color del fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .contacto-section .contacto-form-container .contacto-form .form-group button:hover {
+    background-color: #e5533d; 
     
-}
+  }
 
-.ubicacion-section a:hover{
+
+/* --------  PAGINA DE UBICACION -------- */
+
+.ubicacion-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .ubicacion-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .ubicacion-section a {
     font-size: 20px;
+    text-decoration: none;
     color: black;
+  }
+  
+  .ubicacion-section a:hover {
     text-decoration: underline;
+    color: #e5533d;
+  }
+  
+  .ubicacion-section div iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+  }
+
+/* -------- PAGINA DE ENVIOS -------- */
+
+.envios-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .envios-page h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .envios-page h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .envios-page h3 {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .envios-page p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .envios-page strong {
+    font-weight: bold;
+  }
+  
+  .envios-page h3 + p {
+    margin-top: 5px;
+  }
+  
+  .envios-page p + p {
+    margin-top: -10px;
+  }
+  .envios-page .ultimo-parrafo {
+    margin-bottom: 40px;
+  }
+
+/* ------- PAGINA DE FORMAS DE PAGO ------ */
+
+.cuotas-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #000;
+  border-radius: 8px;
 }
 
-.ubicacion-section div iframe {
-    margin-top: 20px
+.cuotas-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.cuotas-page h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
 
-/* ---------- RESPONSIVE DESING ---------- */
+.cuotas-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
 
-/* --------- media queries index --------- */
+.cuotas-page strong {
+  font-weight: bold;
+}
+
+/* ------ PÁGINA DE CAMBIOS -------- */
+
+.cambios-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  color: #000;
+  border-radius: 8px;
+}
+
+.cambios-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cambios-page h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cambios-page p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cambios-page span {
+  font-weight: bold;
+}
+
+.cambios-page strong {
+  font-weight: bold;
+}
+
+/* --------- RESPONSIVE DESING - MEDIA QUERIES --------- */
 
 @media screen and (max-width: 810px){    
-       /* productos */
-        .productos-elegidos .productos-grid {
-            width: 100%;
-            display: grid;
-            grid-template-rows: auto ;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            
-        
-        }
+  /* productos */
+  .product-section h2 {
+  font-size: 24px;
+  }
 
-        /* info */
-        .info-section .info-item h3 {
-            font-size: 16px;
-            margin-bottom: 10px;
+  .product-section .product-grid {
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto ;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
             
-          }
+  }
+
+  /* info */
+  .info-section .info-item h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      
+    }
+  
           
-        .info-section  .info-item p {
-            font-size: 12px;
-            margin-bottom: 10px;
-            color: #555;
-          }
+  .info-section  .info-item p {
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    
+  .info-section .info-item a {
+      font-size: 12px;
+      color: #555;
+      
+    }
+  /* newsletter */
+  .newsletter h2 {
+      font-size: 18px;
+  }
+  .newsletter p {
+      font-size: 16px;
+  }
+  
+  .newsletter form label {
+      font-size: 16px;
+      margin-bottom: 10px;
+  }
           
-        .info-section .info-item a {
-            font-size: 12px;
-            color: #555;
-            
-          }
-        /* newsletter */
-        .newsletter h2 {
-            font-size: 20px;
-        }
-        .newsletter p {
-            font-size: 16px;
-        }
-        
-        .newsletter form label {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        
-        .newsletter form input {
-            padding: 10px;
-            font-size: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            width: 80%;
-            max-width: 300px;
-        }
-        
-        .newsletter form button {
-            background: #ff6347;
-            color: #fff;
-            padding: 5px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 14px;
-            cursor: pointer;
-        }
+  .newsletter form button { 
+      padding: 5px 15px;
+      font-size: 14px;
+  }
         
 }
 
 
 @media screen and (max-width: 481px) {
 
-    .navbar-brand img {
-        height: 80px;
-        width: 80px;
-    }
-    .productos-elegidos{
-        justify-content: space-around;
-    }
-    
-    .productos-elegidos h2 {
-        font-size: 18px; 
-        text-align: center;
-        padding: 10px;
-        margin-top: 50px;
-    }
-    
-    .productos-elegidos .productos-grid {
-        width: 100%;
-        display: grid;
-        grid-template-rows: auto ;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
+  .navbar-brand img {
+      height: 80px;
+      width: 80px;
+  }
 
-    .productos-elegidos .productos-grid .product-item {
-        text-align: center;
-        width: 300px;
-        padding: 5px;
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-    
-    .productos-elegidos .productos-grid .product-item img {
-        width: 200px;
-        height: 320px;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    
-    .productos-elegidos .productos-grid .product-item .product-description {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-    
-    .productos-elegidos .productos-grid .product-item .product-price {
-        font-size: 16px;
-        
-    }
-    
-    .productos-elegidos .productos-grid .product-item .btn-add-to-cart {
-        padding: 5px 10px;
-        font-size: 14px;
-    }
+  .product-section{
+      justify-content: space-around;
+  }
+  
+  .product-section h2 {
+      font-size: 18px; 
+      padding: 10px;
+      margin-top: 50px;
+  }
+  
+  .product-section .product-grid {
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto ;
+      grid-template-columns: 1fr;
+  }
+
+  .product-section .product-grid .product-item {
+      text-align: center;
+      width: 300px;
+      padding: 5px;
+      grid-column: span 1;
+      grid-row: span 1;
+  }
+  
+  .product-section .product-grid .product-item img {
+      width: 200px;
+      height: 320px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+  }
+  
+  .product-section .product-grid .product-item .product-description {
+      font-size: 14px;
+  }
+  
+  .productos-elegidos .productos-grid .product-item .product-price {
+      font-size: 16px;
+      
+  }
+  
+  .product-section .product-grid .product-item .btn-add-to-cart {
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+
+  /* -------- INFO SECTION -------- */
+
+  .info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+  }
+
+    .info-item {
+      text-align: left;
+      margin: 10px;
+  }
 
 
-    .info-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 50px;
-        width: 100%;
-      }
-
-      .info-item {
-        text-align: left;
-        margin: 20px;
-      }
+  /* -------- FOOTER -------- */
 
     footer {
         font-size: 12px;
-    }
+  }
+
+    footer div a span {
+        display: none;
+  }
+
     footer p {
         font-size: 12px;
-    }
-    
-}
+  }
+  
+  /* ------ PAGINA NOSOTROS ----- */
 
-/* --------- media queries ellas ellos niños --------- */
+    .nosotros-section {
+      padding: 20px;
+  }
+  
+    .nosotros-section h1 {
+      font-size: 28px;
+  }
+  
+    .nosotros-section p {
+      font-size: 16px;
+      line-height: 1.6;
+  }
 
+  /* --------  PAGINA DE UBICACION -------- */
 
-@media screen and (max-width: 810px) {
+    .ubicacion-section {
+      padding: 20px;
+  }
+  
+    .ubicacion-section h1 {
+      font-size: 28px;
+  }
+  
+    .ubicacion-section a {
+      font-size: 16px;
+  }
+  
+    .ubicacion-section div iframe {
+      height: 200px;
+  }
 
-    .product-page .product-section {
-        padding: 20px;
-    }
-    
-    .product-page h2 {
-        font-size: px;
-    }
-    
-    .product-page .product-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
-    }
-    
-    .product-page .product-item {
+  /* ----- PAGINA DE ENVIOS ------- */
+
+    .envios-page {
         padding: 10px;
-    }
-    .product-page .product-item img {
-        max-width: 100%; 
-        height: auto;
-        margin-bottom: 10px;
-    }
-    
-    .product-page .product-description {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-    
-    .product-page .product-price {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    
-    .product-page .btn-add-to-cart {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    .product-page .newsletter h2 {
-        font-size: 18px;
-    }
-    .product-page .newsletter p {
-        font-size: 16px;
-    }
-}
+  }
+  
+    .envios-page h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+    .envios-page h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+  
+    .envios-page h3 {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  
+    .envios-page p {
+      font-size: 14px;
+      margin-bottom: 10px;
+  }
 
-@media screen and (max-width: 481px) {    
-    .product-page h2 {
-        text-align: center;
-        margin-bottom: 16px;
-        font-size: 28px;
-        color: #333;
-    }
-    
-    .product-page .product-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-items: center;
-        margin-bottom: 40px;
-    }
-    
-    .product-page .product-item {
-        text-align: center;
-        padding: 10px;
-        background-color: #f7f7f7;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    
-    
-    .product-page .product-item img {
-        max-width: 100%; 
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    
-    .product-page .product-description {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-    
-    .product-page .product-price {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    
-    .product-page .btn-add-to-cart {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-    
-    
+  /* ------- PAGINA DE FORMAS DE PAGO ------ */
+    .cuotas-page {
+      padding: 20px;
+  }
+  
+    .cuotas-page h1 {
+      font-size: 28px;
+  }
+  
+    .cuotas-page h2 {
+      font-size: 24px;
+  }
+  
+    .cuotas-page p {
+      font-size: 16px;
+  }
+
+  /* ------ PÁGINA DE CAMBIOS -------- */
+  .cambios-page {
+    padding: 20px;
+  }
+
+  .cambios-page h1 {
+    font-size: 28px;
+  }
+
+  .cambios-page h2 {
+    font-size: 24px;
+  }
+
+  .cambios-page p {
+    font-size: 16px;
+  }
 }
+    
+
