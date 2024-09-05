@@ -124,6 +124,28 @@ main .hero {
   main .hero .carousel .carousel-inner .carousel-item .carousel-caption p {
     font-weight: 600; }
 
+main .info-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #b5a9a9b7;
+  width: 100%; }
+  main .info-section .info-item {
+    text-align: left; }
+    main .info-section .info-item h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333; }
+    main .info-section .info-item p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #555; }
+    main .info-section .info-item a {
+      font-size: 14px;
+      color: #555; }
+      main .info-section .info-item a:hover {
+        text-decoration: underline; }
+
 main .newsletter {
   background: #f9f9f9;
   padding: 20px;
