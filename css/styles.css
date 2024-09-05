@@ -70,12 +70,10 @@ header {
 
 /* -------- HERO SECTION -------- */
 
-.hero .hero-section {
+.hero {
     position: relative;
   }
-  
 
-  
 .hero .hero-text {
     position: absolute;
     top: 50%;
@@ -126,7 +124,9 @@ header {
 .hero .carousel .carousel-inner .carousel-item .carousel-caption p {
     font-weight: 600;
 }
-/* -------- ELEGIDOS SECTION -------- */
+
+
+/* -------- PRODUCT SECTION -------- */
 
 
 .product-section {
@@ -285,48 +285,7 @@ header {
     background: #e5533d;
 }
 
-/* -------- FOOTER -------- */
-footer {
-    background: #333;
-    color: #fff;   
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-}
 
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.footer-link,
-.footer-social {
-    color: #fff;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.footer-link:hover,
-.footer-social:hover {
-    text-decoration: underline;
-}
-
-.footer-social img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-footer p {
-    padding-top: 20px;
-    font-size: 14px;
-    border-top: 1px #fff solid;
-}
 
 
 /* -------- WHATSAPP ICON -------- */
@@ -336,6 +295,49 @@ footer p {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+}
+
+/* -------- FOOTER -------- */
+footer {
+  background: #333;
+  color: #fff;   
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-link,
+.footer-social {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link:hover,
+.footer-social:hover {
+  text-decoration: underline;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+footer p {
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px #fff solid;
 }
 
 
@@ -405,13 +407,13 @@ footer p {
 .contacto-section .contacto-form-container .contacto-form .form-group textarea {
     resize: vertical;
     min-height: 100px;
-    width: 100%; /* Ajusta el ancho para que sea responsivo */
+    width: 100%; 
   }
   
   .contacto-section .contacto-form-container .contacto-form .form-group button {
-    align-self: flex-start; /* Alinea el botón al principio */
+    align-self: flex-start;
     padding: 10px 20px;
-    background-color: #ff6347; /* Color del fondo del botón */
+    background-color: #ff6347; 
     color: white;
     border: none;
     border-radius: 4px;
@@ -462,7 +464,7 @@ footer p {
     border-radius: 8px;
   }
 
-/* -------- PAGINA DE ENVIOS -------- */
+/* -------- PAGINA INFO ENVIO -------- */
 
 .envios-page {
     max-width: 800px;
@@ -511,7 +513,7 @@ footer p {
     margin-bottom: 40px;
   }
 
-/* ------- PAGINA DE FORMAS DE PAGO ------ */
+/* ------- PAGINA INFO CUOTAS ------ */
 
 .cuotas-page {
   max-width: 800px;
@@ -545,7 +547,7 @@ footer p {
   font-weight: bold;
 }
 
-/* ------ PÁGINA DE CAMBIOS -------- */
+/* ------ PÁGINA INFO CAMBIO -------- */
 
 .cambios-page {
   max-width: 800px;
@@ -586,6 +588,33 @@ footer p {
 /* --------- RESPONSIVE DESING - MEDIA QUERIES --------- */
 
 @media screen and (max-width: 810px){    
+  /* hero section */
+
+  .hero {
+    .hero-text {
+      max-width: 80%; 
+      padding: 15px; 
+    }
+
+    .hero-text h1 {
+      font-size: 28px; 
+    }
+
+    .hero-text p {
+      font-size: 14px; 
+    }
+
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          img {
+            height: 500px; 
+          }
+        }
+      }
+    }
+  }
+
   /* productos */
   .product-section h2 {
   font-size: 24px;
@@ -641,6 +670,31 @@ footer p {
 
 
 @media screen and (max-width: 481px) {
+
+  .hero {
+    .hero-text {
+      max-width: 90%; 
+      padding: 10px; 
+    }
+
+    .hero-text h1 {
+      font-size: 24px; 
+    }
+
+    .hero-text p {
+      font-size: 12px; 
+    }
+
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          img {
+            height: 400px; 
+          }
+        }
+      }
+    }
+  }
 
   .navbar-brand img {
       height: 80px;

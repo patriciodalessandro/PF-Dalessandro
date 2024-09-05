@@ -1,0 +1,132 @@
+/* -------- MAIN -------- */
+main {
+
+  .hero {
+    position: relative;
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5); 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 60%;
+      z-index: 10;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        h1 {
+          font-size: 36px;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        p {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          img {
+            height: 600px;
+            object-fit: cover;
+          }
+
+          .carousel-caption {
+            h5 {
+              font-weight: 800;
+            }
+
+            p {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        span {
+          &.carousel-control-prev-icon,
+          &.carousel-control-next-icon {
+            aria-hidden: true;
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    background: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 80%;
+        max-width: 400px;
+      }
+
+      button {
+        background: #ff6347;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+          background: #e5533d;
+        }
+      }
+    }
+  }
+
+  .whatsapp {
+    a {
+      img {
+        width: 40px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+    }
+  }
+}
