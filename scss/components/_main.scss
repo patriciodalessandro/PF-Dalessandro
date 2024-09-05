@@ -54,16 +54,6 @@ main {
           }
         }
       }
-
-      .carousel-control-prev,
-      .carousel-control-next {
-        span {
-          &.carousel-control-prev-icon,
-          &.carousel-control-next-icon {
-            aria-hidden: true;
-          }
-        }
-      }
     }
   }
 

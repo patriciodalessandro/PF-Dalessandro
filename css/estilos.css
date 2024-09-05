@@ -123,10 +123,6 @@ main .hero {
     font-weight: 800; }
   main .hero .carousel .carousel-inner .carousel-item .carousel-caption p {
     font-weight: 600; }
-  main .hero .carousel .carousel-control-prev span.carousel-control-prev-icon, main .hero .carousel .carousel-control-prev span.carousel-control-next-icon,
-  main .hero .carousel .carousel-control-next span.carousel-control-prev-icon,
-  main .hero .carousel .carousel-control-next span.carousel-control-next-icon {
-    aria-hidden: true; }
 
 main .newsletter {
   background: #f9f9f9;
