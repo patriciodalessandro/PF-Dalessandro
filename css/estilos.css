@@ -63,7 +63,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000; }
-  header .navbar-brand img {
+  header .navbar-brand .logo {
     height: 100px;
     width: 100px; }
   header .navbar-nav {
@@ -91,9 +91,9 @@ header {
         margin: 10px 15px 10px 10px; }
 
 /* -------- MAIN -------- */
-main .hero {
+.hero {
   position: relative; }
-  main .hero .hero-text {
+  .hero .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,64 +106,67 @@ main .hero {
     border-radius: 8px;
     max-width: 60%;
     z-index: 10; }
-    main .hero .hero-text a {
+    .hero .hero-text a {
       text-decoration: none;
       color: white; }
-      main .hero .hero-text a h1 {
+      .hero .hero-text a h1 {
         font-size: 36px;
         font-weight: bold;
         margin: 0; }
-      main .hero .hero-text a p {
+      .hero .hero-text a p {
         font-size: 16px;
         margin-top: 10px; }
-  main .hero .carousel .carousel-inner .carousel-item img {
+  .hero .carousel .carousel-inner .carousel-item .carousel-img {
+    width: 100%;
     height: 600px;
     object-fit: cover; }
-  main .hero .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  .hero .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-weight: 800; }
-  main .hero .carousel .carousel-inner .carousel-item .carousel-caption p {
+  .hero .carousel .carousel-inner .carousel-item .carousel-caption p {
     font-weight: 600; }
 
-main .info-section {
+/* INFO SECTION */
+.info-section {
   display: flex;
   justify-content: space-around;
   padding: 50px;
   background-color: #b5a9a9b7;
   width: 100%; }
-  main .info-section .info-item {
+  .info-section .info-item {
     text-align: left; }
-    main .info-section .info-item h3 {
+    .info-section .info-item h3 {
       font-size: 18px;
       margin-bottom: 10px;
       color: #333; }
-    main .info-section .info-item p {
+    .info-section .info-item p {
       font-size: 14px;
       margin-bottom: 10px;
       color: #555; }
-    main .info-section .info-item a {
+    .info-section .info-item a {
       font-size: 14px;
       color: #555; }
-      main .info-section .info-item a:hover {
+      .info-section .info-item a:hover {
         text-decoration: underline; }
 
-main .newsletter {
+/* NEWSLETTER SECTION */
+.newsletter {
   background: #f9f9f9;
   padding: 20px;
   text-align: center;
   width: 100%; }
-  main .newsletter h2 {
+  .newsletter h2 {
     font-size: 20px;
     margin-bottom: 10px; }
-  main .newsletter p {
+  .newsletter p {
     font-size: 18px; }
-  main .newsletter form {
+  .newsletter form {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    main .newsletter form label {
+    .newsletter form label {
       font-size: 18px;
       margin-bottom: 10px; }
-    main .newsletter form input {
+    .newsletter form input {
       padding: 10px;
       font-size: 12px;
       border: 1px solid #ccc;
@@ -171,7 +174,7 @@ main .newsletter {
       margin-bottom: 10px;
       width: 80%;
       max-width: 400px; }
-    main .newsletter form button {
+    .newsletter form button {
       background: #ff6347;
       color: #fff;
       padding: 10px 20px;
@@ -179,10 +182,11 @@ main .newsletter {
       border-radius: 5px;
       font-size: 18px;
       cursor: pointer; }
-      main .newsletter form button:hover {
+      .newsletter form button:hover {
         background: #e5533d; }
 
-main .whatsapp a img {
+/* WHATSAPP ICON */
+.whatsapp a img {
   width: 40px;
   position: fixed;
   bottom: 20px;
@@ -202,17 +206,19 @@ footer {
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 20px; }
-    footer .footer-content .footer-link,
+    footer .footer-content a {
+      color: #fff;
+      text-decoration: none; }
+      footer .footer-content a:hover {
+        text-decoration: underline; }
     footer .footer-content .footer-social {
       color: #fff;
       text-decoration: none;
       display: flex;
       align-items: center; }
-      footer .footer-content .footer-link:hover,
       footer .footer-content .footer-social:hover {
         text-decoration: underline; }
-      footer .footer-content .footer-link.footer-social img,
-      footer .footer-content .footer-social.footer-social img {
+      footer .footer-content .footer-social img {
         width: 30px;
         height: 30px;
         margin-right: 10px; }
@@ -389,16 +395,21 @@ footer {
     border-radius: 8px; }
 
 @media screen and (max-width: 810px) {
+  /* HERO SECTION */
   .hero .hero-text {
     max-width: 80%;
     padding: 15px; }
-    .hero .hero-text h1 {
+    .hero .hero-text a h1 {
       font-size: 28px; }
-    .hero .hero-text p {
-      font-size: 14px; }
-  .hero .carousel .carousel-inner .carousel-item img {
-    height: 500px; }
-  .product-section h2 {
+    .hero .hero-text a p {
+      font-size: 14px;
+      margin: 5px; }
+  .hero .carousel .carousel-inner .carousel-item .carousel-link .carousel-img {
+    height: 100%;
+    height: 100%;
+    object-fit: contain; }
+  /* PRODUCT SECTION */
+  .product-section .elegidos {
     font-size: 24px; }
   .product-section .product-grid {
     width: 100%;
@@ -406,6 +417,7 @@ footer {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     gap: 20px; }
+  /* INFO SECTION */
   .info-section .info-item h3 {
     font-size: 16px;
     margin-bottom: 10px; }
@@ -416,34 +428,7 @@ footer {
   .info-section .info-item a {
     font-size: 12px;
     color: #555; }
-  .newsletter h2 {
-    font-size: 18px; }
-  .newsletter p {
-    font-size: 16px; }
-  .newsletter form label {
-    font-size: 16px;
-    margin-bottom: 10px; }
-  .newsletter form button {
-    padding: 5px 15px;
-    font-size: 14px; }
-  .product-section h2 {
-    font-size: 24px; }
-  .product-section .product-grid {
-    width: 100%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; }
-  .info-section .info-item h3 {
-    font-size: 16px;
-    margin-bottom: 10px; }
-  .info-section .info-item p {
-    font-size: 12px;
-    margin-bottom: 10px;
-    color: #555; }
-  .info-section .info-item a {
-    font-size: 12px;
-    color: #555; }
+  /* NEWSLETTER SECTION */
   .newsletter h2 {
     font-size: 18px; }
   .newsletter p {
@@ -456,24 +441,26 @@ footer {
     font-size: 14px; } }
 
 @media screen and (max-width: 481px) {
-  .hero .hero-text {
-    max-width: 90%;
-    padding: 10px; }
-    .hero .hero-text h1 {
-      font-size: 24px; }
-    .hero .hero-text p {
-      font-size: 12px; }
-  .hero .carousel .carousel-inner .carousel-item img {
-    height: 400px; }
-  .navbar-brand img {
+  .navbar .container-fluid .navbar-brand .logo {
     height: 80px;
     width: 80px; }
+  .hero .hero-text {
+    max-width: 90%;
+    padding: 5px; }
+    .hero .hero-text a h1 {
+      font-size: 18px; }
+    .hero .hero-text a p {
+      font-size: 12px;
+      margin: 5px 0px 0px 0px; }
+    .hero .hero-text .carousel .carousel-inner .carousel-item img {
+      height: 400px; }
+  /* PRODUCT SECTION */
   .product-section {
     justify-content: space-around; }
     .product-section h2 {
       font-size: 18px;
       padding: 10px;
-      margin-top: 50px; }
+      margin: 20px 0px 10px 0px; }
     .product-section .product-grid {
       width: 100%;
       display: grid;
@@ -481,10 +468,8 @@ footer {
       grid-template-columns: 1fr; }
       .product-section .product-grid .product-item {
         text-align: center;
-        width: 300px;
-        padding: 5px;
-        grid-column: span 1;
-        grid-row: span 1; }
+        width: 220px;
+        height: 440px; }
         .product-section .product-grid .product-item img {
           width: 200px;
           height: 320px;
@@ -497,6 +482,7 @@ footer {
         .product-section .product-grid .product-item .btn-add-to-cart {
           padding: 5px 10px;
           font-size: 14px; }
+  /* INFO SECTION */
   .info-section {
     display: flex;
     flex-direction: column;
@@ -505,12 +491,35 @@ footer {
     .info-section .info-item {
       text-align: left;
       margin: 10px; }
+  /* NEWSLETTER SECTION */
+  .newsletter h2 {
+    font-size: 16px; }
+  .newsletter p {
+    font-size: 14px; }
+  .newsletter form {
+    font-size: 14px; }
+    .newsletter form label {
+      margin-bottom: 0px; }
+    .newsletter form button {
+      padding: 5px 15px; }
+  /* FOOTER */
   footer {
     font-size: 12px; }
-    footer div a span {
-      display: none; }
+    footer .footer-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      footer .footer-content .footer-link {
+        border-left: 1px #fff solid;
+        border-right: 1px #fff solid; }
+      footer .footer-content .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        footer .footer-content .footer-social span {
+          display: none; }
     footer p {
       font-size: 12px; }
+  /* NOSOTROS PAGE */
   .nosotros-section {
     padding: 20px; }
     .nosotros-section h1 {
@@ -518,6 +527,7 @@ footer {
     .nosotros-section p {
       font-size: 16px;
       line-height: 1.6; }
+  /* UBICACION PAGE */
   .ubicacion-section {
     padding: 20px; }
     .ubicacion-section h1 {
@@ -526,6 +536,7 @@ footer {
       font-size: 16px; }
     .ubicacion-section div iframe {
       height: 200px; }
+  /* ENVIOS PAGE */
   .envios-page {
     padding: 10px; }
     .envios-page h1 {
@@ -556,4 +567,17 @@ footer {
     .cambios-page h2 {
       font-size: 24px; }
     .cambios-page p {
-      font-size: 16px; } }
+      font-size: 16px; }
+  /* PAGINA DE CONTACTO */
+  .contacto-form-container {
+    width: 100%;
+    padding: 0 20px; }
+    .contacto-form-container h1 {
+      font-size: 30px; }
+    .contacto-form-container .contacto-form .form-group input,
+    .contacto-form-container .contacto-form .form-group textarea {
+      font-size: 14px; }
+    .contacto-form-container .contacto-form button {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 0; } }
