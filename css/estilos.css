@@ -502,6 +502,9 @@ footer {
       margin-bottom: 0px; }
     .newsletter form button {
       padding: 5px 15px; }
+  .whatsapp a img {
+    width: 30px;
+    height: 30px; }
   /* FOOTER */
   footer {
     font-size: 12px; }
@@ -515,6 +518,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center; }
+        footer .footer-content .footer-social img {
+          margin: 0px; }
         footer .footer-content .footer-social span {
           display: none; }
     footer p {

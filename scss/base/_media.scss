@@ -204,6 +204,14 @@
     }
   }
  
+  .whatsapp {
+    a {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 
   /* FOOTER */
   footer {
@@ -220,7 +228,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      
+        img {
+          margin: 0px;
+        }
         span {
           display: none;
         }
