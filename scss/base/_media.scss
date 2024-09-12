@@ -323,26 +323,29 @@
 
   /* PAGINA DE CONTACTO */
   
-  .contacto-form-container {
-    width: 100%;
-    padding: 0 20px;
-    h1 {
-      font-size: 30px; 
-    }
-    .contacto-form {
-      .form-group {
-        input,
-        textarea {
-          font-size: 14px; 
+  .contacto-section {
+    
+    .contacto-form-container {
+      width: 100%;
+      padding: 0 20px;
+      h1 {
+        font-size: 30px; 
+      }
+      .contacto-form {
+        .form-group {
+          input,
+          textarea {
+            font-size: 14px; 
+          }
         }
+  
+        button {
+          width: 100%; 
+          font-size: 14px; 
+          padding: 10px 0; 
+        }
+     
       }
-
-      button {
-        width: 100%; 
-        font-size: 14px; 
-        padding: 10px 0; 
-      }
-   
     }
   }
 }

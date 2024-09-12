@@ -222,7 +222,7 @@ footer {
         width: 30px;
         height: 30px;
         margin-right: 10px; }
-  footer p.cr-footer {
+  footer p {
     padding-top: 20px;
     font-size: 14px;
     border-top: 1px #fff solid; }
@@ -569,15 +569,15 @@ footer {
     .cambios-page p {
       font-size: 16px; }
   /* PAGINA DE CONTACTO */
-  .contacto-form-container {
+  .contacto-section .contacto-form-container {
     width: 100%;
     padding: 0 20px; }
-    .contacto-form-container h1 {
+    .contacto-section .contacto-form-container h1 {
       font-size: 30px; }
-    .contacto-form-container .contacto-form .form-group input,
-    .contacto-form-container .contacto-form .form-group textarea {
+    .contacto-section .contacto-form-container .contacto-form .form-group input,
+    .contacto-section .contacto-form-container .contacto-form .form-group textarea {
       font-size: 14px; }
-    .contacto-form-container .contacto-form button {
+    .contacto-section .contacto-form-container .contacto-form button {
       width: 100%;
       font-size: 14px;
       padding: 10px 0; } }
