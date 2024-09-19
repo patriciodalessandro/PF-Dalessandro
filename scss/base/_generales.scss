@@ -57,7 +57,23 @@ body {
           color: $color-precios;
           font-weight: bold;
           margin-bottom: 12px;
+          
+          .original-price {
+            font-size: 16px;
+            color: #999; // Color gris para el precio original
+            text-decoration: line-through;
+            margin-right: 10px; 
+          }
+        
+          .sale-price {
+            font-size: 18px;
+            color: $color-precios;
+            font-weight: bold;
+          }
+          
         }
+        
+
   
         .btn-add-to-cart {
           padding: 10px 20px;
