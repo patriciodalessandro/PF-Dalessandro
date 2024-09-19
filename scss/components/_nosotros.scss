@@ -3,9 +3,10 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: $color-background;
     text-align: justify;
     border-radius: 8px;
+    color: $color-titulos;
   
     h1 {
       font-size: 36px;

@@ -10,7 +10,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      color: white;
+      color: $color-contraste;
       background-color: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       padding: 20px;
@@ -19,8 +19,8 @@
       z-index: 10;
 
       a {
-        text-decoration: none;
-        color: white;
+        
+        @extend %enlaces;
 
         h1 {
           font-size: 36px;
@@ -60,8 +60,7 @@
 
 /* INFO SECTION */  
   .info-section {
-    display: flex;
-    justify-content: space-around;
+    @include flex(flex, space-around, center, row);
     padding: 50px;
     background-color: #b5a9a9b7;
     width: 100%;
@@ -72,18 +71,18 @@
       h3 {
         font-size: 18px;
         margin-bottom: 10px;
-        color: #333;
+        color: $color-titulos;
       }
 
       p {
         font-size: 14px;
         margin-bottom: 10px;
-        color: #555;
+        color: $color-info;
       }
 
       a {
         font-size: 14px;
-        color: #555;
+        color: $color-info;
 
         &:hover {
           text-decoration: underline;
@@ -94,7 +93,7 @@
 
 /* NEWSLETTER SECTION */  
   .newsletter {
-    background: #f9f9f9;
+    background: $color-background;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -109,10 +108,7 @@
     }
 
     form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
+      @include flex(flex, center, center, column);
       label {
         font-size: 18px;
         margin-bottom: 10px;
@@ -129,8 +125,8 @@
       }
 
       button {
-        background: #ff6347;
-        color: #fff;
+        background: $color-boton;
+        color: $color-contraste;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
@@ -138,7 +134,7 @@
         cursor: pointer;
 
         &:hover {
-          background: #e5533d;
+          background: $color-boton-hover;
         }
       }
     }

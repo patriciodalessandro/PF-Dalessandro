@@ -3,8 +3,8 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 40px;
-    background-color: #f4f4f4;
-    color: #000;
+    background-color: $color-background;
+    color: $color-titulos;
     border-radius: 8px;
   
     h1 {
@@ -17,7 +17,6 @@
       font-size: 28px;
       margin-top: 30px;
       margin-bottom: 15px;
-      color: #333;
     }
   
     p {

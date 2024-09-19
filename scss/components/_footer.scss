@@ -1,21 +1,18 @@
 footer {
-  background: #333;
-  color: #fff;
+  background: $color-background-footer;
+  color: $color-contraste;
   padding: 20px;
   text-align: center;
   width: 100%;
 
   .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center, row);
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 20px;
 
     a {
-      color: #fff;
-      text-decoration: none;
+      @extend %enlaces;
 
       &:hover {
         text-decoration: underline;
@@ -23,8 +20,7 @@ footer {
     }
 
     .footer-social {
-      color: #fff;
-      text-decoration: none;
+      @extend %enlaces;
       display: flex;
       align-items: center;
 
@@ -43,6 +39,6 @@ footer {
   p {
     padding-top: 20px;
     font-size: 14px;
-    border-top: 1px #fff solid;
+    border-top: 1px $color-contraste solid;
   }
 }
