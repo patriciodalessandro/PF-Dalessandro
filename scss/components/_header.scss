@@ -13,7 +13,7 @@ header {
       }
   
       &-nav {
-        @include flex(flex, center, center, row);
+        @include flex(flex, flex-start, center, column);
         
   
         .nav-item {
@@ -34,7 +34,8 @@ header {
   
       &-collapse {
         @include flex(flex, space-between, center, row);
-          
+       
+  
         .shopping-cart {
           margin-left: auto;
   

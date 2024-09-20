@@ -78,9 +78,9 @@ header {
     width: 100px; }
   header .navbar-nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: row; }
+    flex-direction: column; }
     header .navbar-nav .nav-item {
       margin: 10px; }
     header .navbar-nav .nav-link {
@@ -320,15 +320,15 @@ footer {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center; }
-  .cuotas-page h2 {
+  .cuotas-page div h2 {
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 15px; }
-  .cuotas-page p {
+  .cuotas-page div p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 15px; }
-    .cuotas-page p strong {
+    .cuotas-page div p strong {
       font-weight: bold; }
 
 /* -------- PAGINA INFO ENVIO -------- */
@@ -406,6 +406,14 @@ footer {
     height: 300px;
     border: 0;
     border-radius: 8px; }
+
+@media screen and (min-height: 1242px) {
+  .ubicacion-section {
+    height: calc(100vh - 715px); }
+  .cuotas-page {
+    height: calc(100vh - 715px); }
+  .contacto-section {
+    height: calc(100vh - 715px); } }
 
 @media screen and (max-width: 810px) {
   /* HERO SECTION */

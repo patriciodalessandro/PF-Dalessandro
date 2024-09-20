@@ -1,3 +1,15 @@
+@media screen and (min-height: 1242px) {
+  .ubicacion-section {
+    height: calc(100vh - 715px);
+  }
+  .cuotas-page {
+    height: calc(100vh - 715px);
+  }
+  .contacto-section {
+    height: calc(100vh - 715px);
+
+  }
+}
 @media screen and (max-width: 810px) {
   /* HERO SECTION */
   .hero {
